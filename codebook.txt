@@ -1,0 +1,117 @@
+This is the codebook describing each of the columns in the submitted_dataset.csv file
+
+The first two columns are straightforward:
+
+activity
+        The types of activity performed in the study
+
+subject
+        The ID number for the subject performing the activities
+
+For the remaining columns, the following processes was applied:
+        The data was initially collected on a 50Hz basis, and was averaged into a 20Hz basis.
+        This means a reduction of data points from 50 points per sec to 20.
+        "Point" is where there original scores were averaged (the  mean was taken as a point)
+        "Dev" is the standard deviation of those different measurement scores that were averaged out.
+        The range of these variables are from -1 to 1
+
+        This dataset, however, contains the AGGREGATED values only.
+        The measurements were aggregated for each activity and each subject.
+        The aggregation method applied was the mean. 
+        So each row in the dataset contains MEAN body linear and angular measurements, for each subject and each activity.        
+
+Mean_tBodyAcc-Point-X
+Mean_ttBodyAcc-Point-Y
+Mean_ttBodyAcc-Point-Z
+Mean_ttBodyAcc-Dev-X
+tBodyAMean_tcc-Dev-Y
+Mean_ttBodyAcc-Dev-Z
+        These are 3-axial sensor measurements for Linear Body Acceleration
+
+Mean_ttGravityAcc-Point-X
+Mean_ttGravityAcc-Point-Y
+Mean_ttGravityAcc-Point-Z
+Mean_ttGravityAcc-Dev-X
+Mean_ttGravityAcc-Dev-Y
+Mean_ttGravityAcc-Dev-Z
+        These are 3-axial Acceleration sensor measurements for Gravity Line
+
+Mean_ttBodyAccJerk-Point-X
+Mean_ttBodyAccJerk-Point-Y
+Mean_ttBodyAccJerk-Point-Z
+Mean_ttBodyAccJerk-Dev-X
+Mean_ttBodyAccJerk-Dev-Y
+Mean_ttBodyAccJerk-Dev-Z
+        These are 3-axial Acceleration sensor measurements for Linear Body Jerk
+
+Mean_ttBodyGyro-Point-X
+Mean_ttBodyGyro-Point-Y
+Mean_ttBodyGyro-Point-Z
+Mean_ttBodyGyro-Dev-X
+Mean_ttBodyGyro-Dev-Y
+Mean_ttBodyGyro-Dev-Z
+        These are 3-axial Gyro sensor measurements for Angular Body movements
+
+Mean_ttBodyGyroJerk-Point-X
+Mean_ttBodyGyroJerk-Point-Y
+Mean_ttBodyGyroJerk-Point-Z
+Mean_ttBodyGyroJerk-Dev-X
+Mean_ttBodyGyroJerk-Dev-Y
+Mean_ttBodyGyroJerk-Dev-Z
+        These are 3-axial Gyro sensor measurements for Angular Body Jerks
+
+Mean_ttBodyAccMag-Point
+Mean_ttBodyAccMag-Dev
+        These are Body Acceleration Magnitudes
+
+Mean_ttGravityAccMag-Point
+Mean_ttGravityAccMag-Dev
+        These are Gravity Acceleration Magnitudes
+
+Mean_ttBodyAccJerkMag-Point
+Mean_ttBodyAccJerkMag-Dev
+        These are Body Jerk Acceleration Magnitues
+
+Mean_ttBodyGyroMag-Point
+Mean_ttBodyGyroMag-Dev
+        These are Body Gyro Magnitues
+
+Mean_ttBodyGyroJerkMag-Point
+Mean_ttBodyGyroJerkMag-Dev
+        These are Body Jerk Gyro Magnitues
+
+Mean_tfBodyAcc-Point-X
+Mean_tfBodyAcc-Point-Y
+Mean_tfBodyAcc-Point-Z
+Mean_tfBodyAcc-Dev-X
+Mean_tfBodyAcc-Dev-Y
+Mean_tfBodyAcc-Dev-Z
+        These are Fourier-transformed Body Linear Acceleration measurements
+
+Mean_tfBodyAccJerk-Point-X
+Mean_tfBodyAccJerk-Point-Y
+Mean_tfBodyAccJerk-Point-Z
+Mean_tfBodyAccJerk-Dev-X
+Mean_tfBodyAccJerk-Dev-Y
+Mean_tfBodyAccJerk-Dev-Z
+        These are Fourier-transformed Body Linear Jerk measurements
+
+Mean_tfBodyGyro-Point-X
+Mean_tfBodyGyro-Point-Y
+Mean_tfBodyGyro-Point-Z
+Mean_tfBodyGyro-Dev-X
+Mean_tfBodyGyro-Dev-Y
+Mean_tfBodyGyro-Dev-Z
+        These are Fourier-transformed Body Angular Gyro measurements
+
+Mean_tfBodyAccMag-Point
+Mean_tfBodyAccMag-Dev
+        These are Fourier-transformed Body Linear Acceleration measurements
+
+Mean_tfBodyBodyAccJerkMag-Point
+Mean_tfBodyBodyAccJerkMag-Dev
+Mean_tfBodyBodyGyroMag-Point
+Mean_tfBodyBodyGyroMag-Dev
+Mean_tfBodyBodyGyroJerkMag-Point
+Mean_tfBodyBodyGyroJerkMag-Dev
+        These are additional data about various Body Linear and Angular measurements
