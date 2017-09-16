@@ -226,7 +226,7 @@ names( ans4_dataset ) <-gsub( "\\-std\\(\\)", "\\-Dev", names( ans4_dataset ) )
 ###                                                                       ###
 ###  Steps:                                                               ###
 ###  1. use dplyr group_by() and summarize_all()                          ###
-###  2. save output file "submitted_dataset.csv"                          ###
+###  2. save output file "submitted_dataset.txt"                          ###
 #############################################################################
 
 ### tidying via group_by and summarize_all
@@ -238,7 +238,7 @@ colnames( ans5_dataset )[3:68] <- paste0("Mean_", colnames( ans5_dataset )[3:68]
 
 ### save output file
 write.table( ans5_dataset,
-           file="./submitted_dataset.csv",
+           file="./submitted_dataset.txt",
            col.names=names( ans5_dataset ),
            row.names=FALSE,
            sep="," )
@@ -246,7 +246,7 @@ write.table( ans5_dataset,
 ### example for reading the output file into R
 submitted_dataset <- tbl_df(
                          read.table(
-                             "./submitted_dataset.csv",
+                             "./submitted_dataset.txt",
                              stringsAsFactors=FALSE,
                              sep=",",
                              header=TRUE
